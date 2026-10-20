@@ -28,6 +28,6 @@ python3 modbus_test_server.py 5020
 
 Connect iModbus-TCP to that computer's IP address on port 5020. The iPhone and the computer must be on the same network. Holding register 0 counts seconds, register 1 is a sine wave, registers 2–3 are a 32-bit float temperature, and register 10 (starting at 1234) is free for writing. The comment at the top of the script lists everything it simulates. Press Ctrl+C to stop it.
 
-## Support
+## Support, fixes and feature requests
 
-Questions or problems: [matrixtesting2@gmail.com](mailto:matrixtesting2@gmail.com)
+Found a bug, or want a feature added? Email [matrixtesting2@gmail.com](mailto:matrixtesting2@gmail.com). Fixes and new features are based on these emails, so please describe the device and what you expected to happen.
