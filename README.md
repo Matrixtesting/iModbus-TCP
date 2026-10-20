@@ -6,7 +6,7 @@ This repository hosts the app's public web pages:
 
 - [Privacy Policy](https://matrixtesting.github.io/iModbus-TCP/): iModbus TCP collects no data.
 
-- [Modbus TCP test server](modbus_test_server.py): simulates Modbus TCP devices on a Mac, for trying the app without real equipment.
+- [Modbus TCP test server](modbus_test_server.py): simulates Modbus TCP devices, for trying the app without real equipment.
 
 The app's source code is not published here.
 
@@ -20,13 +20,13 @@ The app's source code is not published here.
 
 ## Test server
 
-`modbus_test_server.py` simulates Modbus TCP devices. It needs only Python 3, which comes with macOS.
+`modbus_test_server.py` simulates Modbus TCP devices. It runs on any computer with Python 3 (Windows, macOS or Linux) and needs no extra packages.
 
 ```bash
 python3 modbus_test_server.py 5020
 ```
 
-Connect iModbus TCP to your Mac's IP address on port 5020. Holding register 0 counts seconds, register 1 is a sine wave, registers 2–3 are a 32-bit float temperature, and register 10 (starting at 1234) is free for writing. The comment at the top of the script lists everything it simulates. Press Ctrl+C to stop it.
+Connect iModbus TCP to that computer's IP address on port 5020. The iPhone and the computer must be on the same network. Holding register 0 counts seconds, register 1 is a sine wave, registers 2–3 are a 32-bit float temperature, and register 10 (starting at 1234) is free for writing. The comment at the top of the script lists everything it simulates. Press Ctrl+C to stop it.
 
 ## Support
 
